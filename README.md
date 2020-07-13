@@ -1,11 +1,12 @@
 # Trends in Indian Fake news
-A study of all altnews.in articles. 
+A study of all [AltNews](https://www.altnews.in/) articles. 
 
 ## Data collection
 Utilises scrapy.
 
 The spider [articl.py](ogscraper/articlescrape/spiders/articl.py) retrieves the URLs of all the articles from altnews.in and stores them in a file ([urls.txt](ogscraper/articlescrape/spiders/urls.txt))
-Then the spider [artcraper.py](altscrape/altscrape/spiders/artscraper.py ) retrieves the data from all the given articles.
+
+Next, the spider [artcraper.py](altscrape/altscrape/spiders/artscraper.py ) retrieves the data from all the given articles.
 
 #### Scraping
 ```
@@ -18,4 +19,5 @@ scrapy crawl artscraper -o articles.csv
 
 ## Data wrangling and processing
 Utilises NLTK.
+
 This is done in [Process.ipynb](Process.ipynb).
